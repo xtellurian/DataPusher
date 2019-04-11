@@ -27,6 +27,8 @@ function sendData(data) {
 function sendNext() {
     if (index >= dataArray.length) {
         index = 0;
+    } else {
+        index++;
     }
     let data = dataArray[index];
     sendData(data);
