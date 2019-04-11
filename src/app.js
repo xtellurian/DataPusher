@@ -17,7 +17,7 @@ function sendData(data) {
     request.post({
         headers: { 'content-type': 'application/json', "Authorization": AUTH_HEADER },
         url: ENDPOINT,
-        body: data
+        body: JSON.stringify(data)
     }, function (error, response, body) {
         console.log("response body:")
         console.log(body)
