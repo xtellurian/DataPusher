@@ -1,0 +1,26 @@
+{
+  "name": "data-pusher",
+  "version": "1.0.0",
+  "description": "Loops through a json array and pushes every object to an HTTP endpoint",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtellurian/DataPusher.git"
+  },
+  "keywords": [
+    "http"
+  ],
+  "author": "Rian Finnegan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xtellurian/DataPusher/issues"
+  },
+  "homepage": "https://github.com/xtellurian/DataPusher#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "request": "^2.88.0"
+  }
+}
