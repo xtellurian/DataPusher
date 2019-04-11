@@ -24,15 +24,14 @@ function sendData(data) {
     });
 }
 
+var index = 0;
 function sendNext() {
+    sendData(dataArray[index]);
+    index++;
+
     if (index >= dataArray.length) {
         index = 0;
-    } else {
-        index++;
-    }
-    let data = dataArray[index];
-    sendData(data);
+    } 
 }
 
-var index = 0
-setInterval(function(){ sendNext() },1000)
+setInterval(function(){ sendNext() }, 2000)
